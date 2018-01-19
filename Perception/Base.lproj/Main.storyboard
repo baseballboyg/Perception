@@ -310,6 +310,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextBtnPressed:" destination="eWL-wC-Ft5" eventType="touchUpInside" id="dEq-t9-mBx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUo-AH-ZSy">
                                 <rect key="frame" x="140" y="477" width="96" height="31"/>
@@ -389,6 +392,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7se-f5-AJ9"/>
                     </view>
+                    <connections>
+                        <outlet property="codeField" destination="A2H-dB-18J" id="nfa-VE-Jiy"/>
+                        <outlet property="nextBtn" destination="O7T-6s-hoI" id="eRe-y9-9NC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M6r-pR-yFh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
