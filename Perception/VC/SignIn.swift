@@ -10,11 +10,14 @@ import UIKit
 import PKHUD
 
 class SignIn: UIViewController {
-
+    
+    
     //IBOutlets
     
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    
+    
     
     func errorHUD(){
         HUD.flash(.error, delay: 1.0)
@@ -26,12 +29,15 @@ class SignIn: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
     }
 
     @IBAction func signInPressed(_ sender: Any) {
@@ -45,7 +51,7 @@ class SignIn: UIViewController {
             
         }
     }
-    
-    
+
 }
+
 
