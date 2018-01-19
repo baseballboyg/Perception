@@ -54,7 +54,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hzc-S5-ia7" kind="showDetail" id="Tif-Cn-a4s"/>
+                                    <segue destination="hzc-S5-ia7" kind="show" action="showDetailViewController:sender:" id="Tif-Cn-a4s"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eyelogo" translatesAutoresizingMaskIntoConstraints="NO" id="9pF-0V-BBH">
@@ -150,7 +150,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="eWL-wC-Ft5" kind="show" id="LY3-PL-AZD"/>
+                                    <action selector="nextBtnPressed:" destination="hzc-S5-ia7" eventType="touchUpInside" id="yOj-J8-ncO"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="666-zh-54a">
@@ -159,6 +159,9 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="alert" textContentType="username"/>
+                                <connections>
+                                    <action selector="usernameFieldChanged:" destination="hzc-S5-ia7" eventType="editingDidEnd" id="42R-4e-Dno"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLL-sh-Hmt">
                                 <rect key="frame" x="148" y="174" width="78" height="19"/>
@@ -178,6 +181,9 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="alert" smartDashesType="no" textContentType="email"/>
+                                <connections>
+                                    <action selector="emailFieldChanged:" destination="hzc-S5-ia7" eventType="editingDidEnd" id="09r-ie-Gfp"/>
+                                </connections>
                             </textField>
                             <view alpha="0.10000000149011612" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SmA-AE-LbQ">
                                 <rect key="frame" x="1" y="340" width="375" height="1"/>
@@ -212,6 +218,9 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="alert" secureTextEntry="YES" smartDashesType="no" textContentType="password"/>
+                                <connections>
+                                    <action selector="passwordFieldChanged:" destination="hzc-S5-ia7" eventType="editingDidEnd" id="nRb-jd-7eg"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsN-j8-01x">
                                 <rect key="frame" x="154" y="349" width="72" height="19"/>
@@ -231,6 +240,9 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="alert" smartDashesType="yes" textContentType="password"/>
+                                <connections>
+                                    <action selector="codeFieldChanged:" destination="hzc-S5-ia7" eventType="editingDidEnd" id="b1L-IC-0Gy"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Perscription Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zws-ZK-Nq6">
                                 <rect key="frame" x="124" y="435" width="133" height="19"/>
@@ -266,10 +278,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="P77-xw-eNR"/>
                     </view>
+                    <connections>
+                        <outlet property="codeField" destination="aq6-D7-iHS" id="LTC-n7-OwX"/>
+                        <outlet property="emailField" destination="5eH-7B-xrD" id="ily-s0-uy2"/>
+                        <outlet property="nextBtn" destination="DMr-zV-5fO" id="RyV-Z5-PxH"/>
+                        <outlet property="passwordField" destination="nex-q3-7ra" id="Vq8-sv-khc"/>
+                        <outlet property="usernameField" destination="666-zh-54a" id="dd5-JU-IOa"/>
+                        <segue destination="eWL-wC-Ft5" kind="show" identifier="toSignup2" id="Ryi-xU-HtZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v7Y-Z1-Kc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="815" y="-275"/>
+            <point key="canvasLocation" x="830" y="-276"/>
         </scene>
         <!--Signup2-->
         <scene sceneID="gJm-5s-kEN">
