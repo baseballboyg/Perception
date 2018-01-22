@@ -47,5 +47,10 @@ class Signup2: UIViewController {
     @IBAction func nextBtnPressed(_ sender: Any) {
     }
     
+    @IBAction func codeFieldChanged(_ sender: Any) {
+        checkCompletionStatus()
+    }
+    
+    
     
 }
