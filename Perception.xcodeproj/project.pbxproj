@@ -59,6 +59,7 @@
 		86289583200E7E89005135E8 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
 		86289584200E7E89005135E8 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		86289585200E7E89005135E8 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		864430F920165BF100CD13C0 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		86BB98B8200FAE1B00007A1B /* Signup1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup1.swift; sourceTree = "<group>"; };
 		86BB98BA200FD6CE00007A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86BB98BD200FD90000007A1B /* Signup2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup2.swift; sourceTree = "<group>"; };
@@ -166,6 +167,7 @@
 				86C9322C200E70DB00EFC9CB /* LaunchScreen.storyboard */,
 				86C9322F200E70DB00EFC9CB /* Info.plist */,
 				86C93235200E716F00EFC9CB /* RoundPinkButton.swift */,
+				864430F920165BF100CD13C0 /* Header.h */,
 			);
 			path = Perception;
 			sourceTree = "<group>";
@@ -460,6 +462,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gavinmccabe.Perception;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -476,6 +479,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gavinmccabe.Perception;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
