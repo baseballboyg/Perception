@@ -27,6 +27,8 @@
 		86289596200E7E8A005135E8 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86289583200E7E89005135E8 /* Montserrat-ThinItalic.ttf */; };
 		86289597200E7E8A005135E8 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 86289584200E7E89005135E8 /* OFL.txt */; };
 		86289598200E7E8A005135E8 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86289585200E7E89005135E8 /* Montserrat-Regular.ttf */; };
+		86ACD231201B9E650013BF55 /* smallCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACD230201B9E650013BF55 /* smallCircles.swift */; };
+		86ACD234201BA2590013BF55 /* Global Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACD233201BA2590013BF55 /* Global Variables.swift */; };
 		86BB98B9200FAE1B00007A1B /* Signup1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BB98B8200FAE1B00007A1B /* Signup1.swift */; };
 		86BB98BB200FD6CE00007A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86BB98BA200FD6CE00007A1B /* Assets.xcassets */; };
 		86BB98BE200FD90000007A1B /* Signup2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BB98BD200FD90000007A1B /* Signup2.swift */; };
@@ -59,7 +61,8 @@
 		86289583200E7E89005135E8 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
 		86289584200E7E89005135E8 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		86289585200E7E89005135E8 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		864430F920165BF100CD13C0 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		86ACD230201B9E650013BF55 /* smallCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smallCircles.swift; sourceTree = "<group>"; };
+		86ACD233201BA2590013BF55 /* Global Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Global Variables.swift"; sourceTree = "<group>"; };
 		86BB98B8200FAE1B00007A1B /* Signup1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup1.swift; sourceTree = "<group>"; };
 		86BB98BA200FD6CE00007A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86BB98BD200FD90000007A1B /* Signup2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup2.swift; sourceTree = "<group>"; };
@@ -102,6 +105,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		86153CFA201B8B7A00D5D60F /* CustomInspect */ = {
+			isa = PBXGroup;
+			children = (
+				86C93235200E716F00EFC9CB /* RoundPinkButton.swift */,
+				86ACD230201B9E650013BF55 /* smallCircles.swift */,
+			);
+			path = CustomInspect;
+			sourceTree = "<group>";
+		};
 		86289572200E7E7C005135E8 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +138,14 @@
 				86289584200E7E89005135E8 /* OFL.txt */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		86ACD232201BA23E0013BF55 /* Data Structure */ = {
+			isa = PBXGroup;
+			children = (
+				86ACD233201BA2590013BF55 /* Global Variables.swift */,
+			);
+			path = "Data Structure";
 			sourceTree = "<group>";
 		};
 		86BB98BC200FD8D400007A1B /* VC */ = {
@@ -159,6 +179,8 @@
 		86C93222200E70DB00EFC9CB /* Perception */ = {
 			isa = PBXGroup;
 			children = (
+				86ACD232201BA23E0013BF55 /* Data Structure */,
+				86153CFA201B8B7A00D5D60F /* CustomInspect */,
 				86BB98BC200FD8D400007A1B /* VC */,
 				86289572200E7E7C005135E8 /* Fonts */,
 				86C93223200E70DB00EFC9CB /* AppDelegate.swift */,
@@ -166,8 +188,6 @@
 				86BB98BA200FD6CE00007A1B /* Assets.xcassets */,
 				86C9322C200E70DB00EFC9CB /* LaunchScreen.storyboard */,
 				86C9322F200E70DB00EFC9CB /* Info.plist */,
-				86C93235200E716F00EFC9CB /* RoundPinkButton.swift */,
-				864430F920165BF100CD13C0 /* Header.h */,
 			);
 			path = Perception;
 			sourceTree = "<group>";
@@ -315,10 +335,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				86C93226200E70DB00EFC9CB /* SignIn.swift in Sources */,
+				86ACD234201BA2590013BF55 /* Global Variables.swift in Sources */,
 				86C93224200E70DB00EFC9CB /* AppDelegate.swift in Sources */,
 				86C93236200E716F00EFC9CB /* RoundPinkButton.swift in Sources */,
 				86BB98BE200FD90000007A1B /* Signup2.swift in Sources */,
 				86BB98B9200FAE1B00007A1B /* Signup1.swift in Sources */,
+				86ACD231201B9E650013BF55 /* smallCircles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +484,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gavinmccabe.Perception;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -479,7 +501,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gavinmccabe.Perception;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -10,7 +10,7 @@ import UIKit
 
 class Signup2: UIViewController {
 
-    
+    //IBOutlets
     @IBOutlet weak var codeField: UITextField!
     @IBOutlet weak var nextBtn: RoundPinkButton!
     
@@ -35,13 +35,11 @@ class Signup2: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    //IBActions
     @IBAction func backBtnPressed(_ sender: Any) {
-        
         dismiss()
-        
     }
   
     @IBAction func nextBtnPressed(_ sender: Any) {
@@ -50,7 +48,4 @@ class Signup2: UIViewController {
     @IBAction func codeFieldChanged(_ sender: Any) {
         checkCompletionStatus()
     }
-    
-    
-    
 }
