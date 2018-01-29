@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1823E39777B504247C952C6E /* Pods_Perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE5F42CA5F0ABE36CF4C00E /* Pods_Perception.framework */; };
+		3EE94376201E1BEF00FF6C19 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE94375201E1BEF00FF6C19 /* MainMenu.swift */; };
 		86289586200E7E8A005135E8 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86289573200E7E87005135E8 /* Montserrat-Bold.ttf */; };
 		86289587200E7E8A005135E8 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86289574200E7E87005135E8 /* Montserrat-ExtraBold.ttf */; };
 		86289588200E7E8A005135E8 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86289575200E7E87005135E8 /* Montserrat-Thin.ttf */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EE94375201E1BEF00FF6C19 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		82C5C9619046D7B310D444A7 /* Pods-Perception.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perception.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Perception/Pods-Perception.debug.xcconfig"; sourceTree = "<group>"; };
 		857C4D98B722B476400159B8 /* Pods-Perception.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perception.release.xcconfig"; path = "Pods/Target Support Files/Pods-Perception/Pods-Perception.release.xcconfig"; sourceTree = "<group>"; };
 		86289573200E7E87005135E8 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				86C93225200E70DB00EFC9CB /* SignIn.swift */,
 				86BB98B8200FAE1B00007A1B /* Signup1.swift */,
 				86BB98BD200FD90000007A1B /* Signup2.swift */,
+				3EE94375201E1BEF00FF6C19 /* MainMenu.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				86C93226200E70DB00EFC9CB /* SignIn.swift in Sources */,
 				86ACD234201BA2590013BF55 /* Global Variables.swift in Sources */,
 				86C93224200E70DB00EFC9CB /* AppDelegate.swift in Sources */,
+				3EE94376201E1BEF00FF6C19 /* MainMenu.swift in Sources */,
 				86C93236200E716F00EFC9CB /* RoundPinkButton.swift in Sources */,
 				86BB98BE200FD90000007A1B /* Signup2.swift in Sources */,
 				86BB98B9200FAE1B00007A1B /* Signup1.swift in Sources */,
